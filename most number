@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        /*Напишите программу, которая читает 3 числа из консоли и выводит после самое большое из трех*/
+        Scanner console = new Scanner(System.in);
+        System.out.println("Перше число : ");
+        int numberOne = console.nextInt();
+        System.out.println("Друге число : ");
+        int numberTwo = console.nextInt();
+        System.out.println("Третє число : ");
+        int numberThree = console.nextInt();
+        if (numberOne <= numberTwo && numberTwo <= numberThree) {
+            System.out.println("Найбільше число: " + numberThree);
+        } else if (numberOne <= numberTwo && numberThree <= numberTwo) {
+            System.out.println("Найбільше число: " + numberTwo);
+        } else if (numberTwo <= numberOne && numberOne <= numberThree) {
+            System.out.println("Найбільше число: " + numberThree);
+        } else if (numberTwo <= numberOne && numberThree <= numberOne) {
+            System.out.println("Найбільше число: " + numberOne);
+        }
+    }
+}
