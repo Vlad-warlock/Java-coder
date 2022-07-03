@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+        System.out.println("Введіть довжину масиву: ");
+        int size = console.nextInt();
+        int[] count = new int[size];
+
+        for (int i = 0; i < size; i++) {
+            System.out.println("Введіть число: ");
+            count[i] = console.nextInt();
+        }
+
+        int max = 0;
+        int element = 0;
+
+        while (element < count.length) {
+            if (count[element] > max) {
+                max = count[element];
+            }
+            element++;
+        }
+
+        System.out.println("Максимальне число: " + max);
+    }
+}
