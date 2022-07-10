@@ -6,7 +6,7 @@ public class Main {
     static int getMaxInteger(int a, int b, int c) {
         int[] arr = {a, b, c};
         int max = Integer.MIN_VALUE;
-        for (int element: arr) {
+        for (int element : arr) {
             if (element > max) {
                 max = element;
             }
